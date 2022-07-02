@@ -1,0 +1,156 @@
+div.arena{
+  margin-top: 30px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10em 10em 10em;
+}
+
+h2.vs{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 60px;
+  color: #bcb9b9;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #7b7b7b,
+               1px 2px 0px #7b7b7b,
+               1px 3px 0px #7b7b7b,
+               1px 4px 0px #7b7b7b,
+               1px 5px 0px #7b7b7b,
+               1px 6px 0px #7b7b7b,
+               1px 10px 5px rgba(0, 0, 0, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+div.firsthero{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+div.secondhero{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #860000;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #4b0000,
+               1px 2px 0px #4b0000,
+               1px 3px 0px #4b0000,
+               1px 4px 0px #4b0000,
+               1px 5px 0px #4b0000,
+               1px 6px 0px #4b0000,
+               1px 10px 5px rgb(40, 40, 40, 0.8),
+               1px 15px 10px rgba(26, 26, 26, 0.8),
+               1px 20px 30px rgba(0, 0, 0, 0.7),
+               1px 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.heroes li {
+  padding: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.heroes button {
+  font-family: 'Copperplate', sans-serif;
+  background: transparent;
+  margin-right: 1em;
+  padding: 3px;
+  padding-right: 0px;
+  display: inline-block;
+  min-width:300px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.heroes button:hover {
+  border-radius: 15px;
+  border: 1px solid #5e6873;
+  color: white;
+}
+
+.heroes button.selected {
+  background-color: #171716;
+  border-radius: 15px;
+  border: 3px solid #5e6873;
+  color: white;
+}
+
+.heroes .name {
+  align-self: center;
+}
+
+button.fight{
+  font-family: 'Copperplate', sans-serif;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  margin: 20px;
+  outline: none;
+  padding: 10px 25px;
+  border: solid transparent;
+  font-weight: 500;
+  font-size: 3em;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #d9d9d9;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #7b7b7b,
+               1px 2px 0px #7b7b7b,
+               1px 3px 0px #7b7b7b,
+               1px 4px 0px #7b7b7b,
+               1px 5px 0px #7b7b7b,
+               1px 6px 0px #7b7b7b,
+               1px 10px 5px rgba(0, 0, 0, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+p.result{
+  font-family: 'Copperplate', sans-serif;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  margin: 20px;
+  outline: none;
+  padding: 10px 25px;
+  border: solid transparent;
+  color: rgb(149, 65, 0);
+  font-weight: 500;
+  font-size: 3em;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  text-shadow: 1px 1px 0px #473100,
+               1px 2px 0px #473100,
+               1px 3px 0px #473100,
+               1px 4px 0px #473100,
+               1px 5px 0px #473100,
+               1px 6px 0px #473100,
+               1px 10px 5px rgb(40, 40, 40),
+               1px 15px 10px rgba(26, 26, 26, 1),
+               1px 20px 30px rgba(0, 0, 0, 1),
+               1px 25px 50px rgba(0, 0, 0, 1);
+}

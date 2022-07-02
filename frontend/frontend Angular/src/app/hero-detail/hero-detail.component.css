@@ -1,0 +1,52 @@
+/* HeroDetailComponent's private CSS styles */
+div{
+  font-family: 'Copperplate', sans-serif;
+  color: white;
+}
+
+input {
+  padding-left: .4em;
+  min-width: 400px;
+  min-height: 30px;
+  font-size: 1.5em;
+  background: transparent;
+  border: 1px solid #5e6873;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Copperplate', sans-serif;
+}
+
+input:focus {
+  outline: #0a131b auto 1px;
+}
+
+button.back{
+  margin-top: 10em;
+}
+
+button.save{
+  margin-top: 20px;
+}
+
+button {
+  outline: none;
+  width: 130px;
+  height: 40px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-family: 'Copperplate', sans-serif;
+}
+button:hover {
+  background-color: #bfbfbf;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}

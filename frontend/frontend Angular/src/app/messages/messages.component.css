@@ -1,0 +1,33 @@
+/* MessagesComponent's private CSS styles */
+div.messages{
+  margin-top: 10em;
+  font-family: 'Copperplate', sans-serif;
+  color:white
+}
+
+h2 {
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+  
+.clear {
+  font-family: 'Copperplate', sans-serif;
+  margin: 20px;
+  outline: none;
+  width: 130px;
+  height: 40px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.clear:hover {
+  background-color: #bfbfbf;
+}

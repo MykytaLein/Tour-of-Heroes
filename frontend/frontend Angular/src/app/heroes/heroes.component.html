@@ -1,0 +1,46 @@
+<body>
+  <div class ="myheroes">
+    <h2>My Heroes</h2>
+      <ul class="heroes">
+        <li *ngFor="let hero of heroes">
+          <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+          </a>
+          <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
+        </li>
+      </ul>
+  </div>
+
+  <div class = "addhero"> 
+    <h2>ADD NEW HERO</h2>
+    <form [formGroup]="angForm" >
+      <div class = "form-group">
+        <label for="new-hero-name">Hero name: </label>
+        <p>
+          <input type="text" id="new-hero-name"  
+                class="form-control" 
+                formControlName="name" required
+                #heroName >
+        </p>
+        <p *ngIf="angForm.controls['name'].touched && angForm.controls['name'].invalid">Please enter valid name!</p>
+      </div>
+
+      <div class = "form-group">
+        <label for="new-hero-str">Hero strength: </label>
+        <p>
+          <input type="number" min="0" max="10" 
+                class="form-control" 
+                id="new-hero-str" required
+                formControlName="strength" #heroStrength />
+        </p>
+      <p *ngIf="angForm.controls['strength'].touched && angForm.controls['strength'].invalid">Please enter a value between 0 and 10!</p>
+      </div>
+    </form>
+
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="button" class="addbutton" *ngIf="angForm.controls['name'].valid&&angForm.controls['strength'].valid"
+                  (click)="add(heroName.value, heroStrength.valueAsNumber); heroName.value=''; heroStrength.value='';">
+      Add hero
+    </button>
+  </div>
+</body>

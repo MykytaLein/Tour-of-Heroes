@@ -1,0 +1,30 @@
+<div class="arena">
+  <div class="firsthero"> 
+    <h2>Pick up first hero!</h2>
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes">
+          <button [class.selected]="hero === selectedHero1" type="button" (click)="onSelect1(hero)">
+            <span class="name">{{hero.name}}</span>
+          </button>
+        </li>
+    </ul>
+  </div> 
+
+  
+
+  <div class="secondhero">
+    <h2>Pick up second hero!</h2>
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes">
+          <button [class.selected]="hero === selectedHero2" type="button" (click)="onSelect2(hero)">
+            <span class="name">{{hero.name}}</span>
+          </button>
+        </li>
+    </ul>
+  </div>
+
+  <h2 class="vs">VS</h2>
+  <button class = "fight" (click)="fight(selectedHero1, selectedHero2)">FIGHT!</button>
+  <p class = "result" *ngIf="result">{{result}}</p>
+  
+</div>

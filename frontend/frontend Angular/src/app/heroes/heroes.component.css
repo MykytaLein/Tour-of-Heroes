@@ -1,0 +1,139 @@
+/* HeroesComponent's private CSS styles */
+.ng-valid[required], .ng-valid.required  {
+  border-left: 11px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 11px solid #a94442; /* red */
+}
+
+body{
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div.myheroes{
+  grid-column-start: 1;
+}
+
+div.addhero {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #bcb9b9;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #7b7b7b,
+               1px 2px 0px #7b7b7b,
+               1px 3px 0px #7b7b7b,
+               1px 4px 0px #7b7b7b,
+               1px 5px 0px #7b7b7b,
+               1px 6px 0px #7b7b7b,
+               1px 10px 5px rgba(0, 0, 0, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+div{
+  text-align: center;
+}
+
+label{
+  font-size: 2em;
+}
+
+button.addbutton{
+  margin: 20px;
+  outline: none;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #bfbfbf;
+}
+
+button.delete{
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+input{
+  min-width: 400px;
+  min-height: 30px;
+  font-size: 1.5em;
+  background: transparent;
+  border: 1px solid #5e6873;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Copperplate', sans-serif;
+}
+
+input:focus {
+  outline: #0a131b auto 1px;
+}
+
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.heroes li {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.heroes a {
+  margin-right: 1em;
+  padding: 10px;
+  padding-right: 0px;
+  display: inline-block;
+  min-width:300px;
+  font-size: 20px;
+  grid-gap: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.heroes a:hover {
+  border-radius: 15px;
+  border: 1px solid #5e6873;
+  color: white;
+}
+
+.heroes a:active {
+  background-color: #171716;
+  color: #fafafa;
+}
+
+.heroes .badge {
+  display: inline-block;
+  color: white;
+}
