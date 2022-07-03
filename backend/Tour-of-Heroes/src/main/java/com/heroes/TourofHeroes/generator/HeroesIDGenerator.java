@@ -23,7 +23,9 @@ public class HeroesIDGenerator implements IdentifierGenerator{
         	long id = 10;
 
 	        while(rs.next()) {
-	        	if(rs.getInt("id")==id) {
+	        	if(rs.getInt("id")!=id) {
+	        		return id;
+	        	}else {
 	        		id++;
 	        	}
 	        }
